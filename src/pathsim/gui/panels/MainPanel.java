@@ -244,7 +244,6 @@ public class MainPanel extends JPanel {
         ctrPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         ctrPanel.setLayout(null);
         ctrPanel.add(bLoadMap);
-//        ctrPanel.add(bLoadSol);
         ctrPanel.add(comboSol);
         ctrPanel.add(bBack);
         ctrPanel.add(bStart);

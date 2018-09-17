@@ -58,8 +58,6 @@ public class Dijkstra extends Algorithm {
                   state = state.idle;
                   return;
                }
-               
-//               System.out.println(distanceOf(current));
 
                visList.add(current);
                current.mark();

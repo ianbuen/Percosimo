@@ -24,26 +24,7 @@ public abstract class Algorithm {
     
     public Algorithm() {
         setSprite();
-    }
-    
-//    protected void setOrigin() {
-//        if (state == State.pointA) {
-//            origin.x = Assets.locX;
-//            origin.y = Assets.locY;
-//            this.currLocation = origin;
-//
-//            map.tileAt(origin).setAsOrigin();
-//            javax.swing.JOptionPane.showMessageDialog(null, "(" + origin.x + ", " + origin.y + ") set as starting point.", "", javax.swing.JOptionPane.INFORMATION_MESSAGE);
-//        }
-//        
-//        state = State.idle;
-//    }
-    
-//    protected void setOrigin(Point origin) {
-//        this.origin = origin;
-//        map.tileAt(origin).setAsOrigin();
-//        this.currLocation = origin;
-//    }
+    } 
     
     protected void setOrigin() {
         if(state == State.pointA)
@@ -101,26 +82,6 @@ public abstract class Algorithm {
            initialized = false;
     }
     
-//    protected void setGoal(Point destination) {
-//        this.destination = destination;
-//        map.tileAt(destination).setAsGoal();
-//    }
-    
-    private void setSprite() {
-//        sprite = Assets.player;
-    }
-    
-//    private void test() {
-//        if(origin == null && destination == null)
-//           System.out.println("Origin: null | Destination: null");
-//        else if(origin != null && destination == null)
-//           System.out.println("Origin: " + origin.x + ", " + origin.y + " | Destination: null");
-//        else if(origin == null && destination != null)
-//           System.out.println("Origin: null | Destination: Destination: " + destination.x + ", " + destination.y);
-//        else
-//           System.out.println("Origin: " + origin.x + ", " + origin.y + " | Destination: " + destination.x + ", " + destination.y);
-//    }
-    
     public void tick() {
         switch(state) {
             case idle: break;
@@ -129,11 +90,6 @@ public abstract class Algorithm {
             case tracing: pathfind(); break;
             case moving:
         }
-    }
-    
-    public void render(Graphics g) {
-//        if(currLocation != null)
-//           g.drawImage(sprite, currLocation.y * 32, currLocation.x * 32, null);
     }
     
     public abstract void pathfind();

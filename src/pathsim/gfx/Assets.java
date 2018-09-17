@@ -57,9 +57,7 @@ public class Assets {
             icewall,
             icepile,
             icepit,
-            icefloor,            
-            
-            //player,
+            icefloor,        
             
             origin,
             finish,

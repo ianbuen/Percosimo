@@ -25,8 +25,7 @@ public class ModeChooser extends JDialog {
     private void initFrame() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
-        setUndecorated(true);
-//        getRootPane().setOpaque(false);
+        setUndecorated(true); 
         initButtons();
         setLocationRelativeTo(null);
         setLocation(getX(), getY() - 5);
